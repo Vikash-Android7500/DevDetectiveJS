@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevDetective</title>
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_VBtLprIYiqgKoKFBSLE82JJic1KJRuMDjR4E2pEtVQ&s">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+   <main class="wrapper">
+
+    <section class="container">
+
+        <header class="header">
+            <h1 class="title">DevDetective</h1>
+            <section id="btn-mode">
+                <p id="mode-text">DARK</p>
+                <section class="icon-container"><img id="mode-icon" src="./assets/images/moon-icon.svg" alt=""></section>
+            </section>
+        </header>
+
+        <article>
+            <section id="app">
+
+                <section class="searchbar-container active">
+                    <input type="search" name="user-input" id="input" placeholder="Enter a GitHub username..." required>
+                    <div class="error">
+                        <p id="no-results">no search results</p>
+                    </div>
+                    <button class="btn-search" id="submit">Search</button>
+                </section>
+
+                <section class="profile-container">
+                    <section class="profile-content">
+                        <section class="profile-header">
+                            <img id="avatar" src="#" alt="">
+                            <section class="profile-info-wrapper">
+                                <section class="profile-name">
+                                    <h2 id="name"></h2>
+                                    <a href="#" target="_blank" rel="noopener noreferrer" id="user"></a>
+                                </section>
+                                <p id="date"></p>
+                            </section>
+                        </section>
+                        
+                        <p id="bio"></p>
+
+                        <section class="profile-stats-wrapper">
+                            <section class="profile-stat">
+                                <p class="stat-title">Repos</p>
+                                <p id="repos" class="stat-value"></p>
+                            </section>
+                            <section class="profile-stat">
+                                <p class="stat-title">Followers</p>
+                                <p id="followers" class="stat-value"></p>
+                            </section>
+                            <section class="profile-stat">
+                                <p class="stat-title">Following</p>
+                                <p id="following" class="stat-value"></p>
+                            </section>
+                        </section>
+
+                        <section class="profile-bottom-wrapper">
+                            <section class="profile-info">
+                                <section class="bottom-icons"><img src="./assets/images/location-icon.svg" alt=""></section>
+                                <p id="location"></p>
+                            </section>
+                            <section class="profile-info">
+                                <section class="bottom-icons"><img src="./assets/images/website-icon.svg" alt=""></section>
+                                <a href="#" id="page"></a>
+                            </section>
+                            <section class="profile-info">
+                                <section class="bottom-icons"><img src="./assets/images/twitter-icon.svg" alt=""></section>
+                                <a href="#" id="twitter"></a>
+                            </section>
+                            <section class="profile-info">
+                                <section class="bottom-icons"><img src="./assets/images/company-icon.svg" alt=""></section>
+                                <p id="company"></p>
+                            </section>
+                        </section>
+
+                    </section>
+                </section>
+            </section>
+        </article>
+
+    </section>
+
+   </main>  
+
+   <!-- link js file -->
+    <script src="./index.js"></script>
+</body>
+
+</html>
